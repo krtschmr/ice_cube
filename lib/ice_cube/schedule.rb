@@ -320,7 +320,7 @@ module IceCube
         target = IceCube::I18n.l(t, format: IceCube.to_s_time_format)
         IceCube::I18n.t('ice_cube.not_on', target: target)
       }
-      pieces.join(IceCube::I18n.t('ice_cube.pieces_connector'))
+      pieces.join(IceCube::I18n.t('ice_cube.pieces_connector')).strip
     end
 
     # Serialize this schedule to_ical

@@ -12,23 +12,15 @@ en:
     until: 'until %{date}'
     days_of_week: '%{segments} %{day}'
     days_of_month:
-      other: '%{segments} days of the month'
-      one: '%{segments} day of the month'
+      other: '%{segments}'
+      one: '%{segments}'
     days_of_year:
       other: '%{segments} days of the year'
       one: '%{segments} day of the year'
-    at_hours_of_the_day:
-      other: on the %{segments} hours of the day
-      one: on the %{segments} hour of the day
-    on_minutes_of_hour:
-      other: on the %{segments} minutes of the hour
-      one: on the %{segments} minute of the hour
-    at_seconds_of_minute:
-      other: at the %{segments} seconds
-      one: at the %{segments} second
-    on_seconds_of_minute:
-      other: on the %{segments} seconds of the minute
-      one: on the %{segments} second of the minute
+    at_hours_of_the_day: "at %{segments}:00 o'clock"
+    on_minutes_of_hour: ""
+    at_seconds_of_minute: ""
+    on_seconds_of_minute: ""
     each_second:
       one: Secondly
       other: Every %{count} seconds
