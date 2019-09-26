@@ -170,7 +170,7 @@ module IceCube
     # The next n occurrences after now
     def next_occurrences(num, from = nil, options = {})
       from = TimeUtil.match_zone(from, start_time) || TimeUtil.now(start_time)
-      enumerate_occurrences(from + 1, nil, options).take(num)
+      enumerate_occurrences(from + 1, end_time + 1.day, options).take(num)
     end
 
     # The next occurrence after now (overridable)
